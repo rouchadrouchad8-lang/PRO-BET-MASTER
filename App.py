@@ -1,4 +1,3 @@
-App.py
 import streamlit as st
 
 # 1. Page Config
