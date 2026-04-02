@@ -1,7 +1,9 @@
 import streamlit as st
 
+# 1. Page Config
 st.set_page_config(page_title="برو بيت ماستر", layout="wide")
 
+# 2. Custom CSS for Arabic Support and Colors
 st.markdown("""
     <style>
     .main { background-color: #FFFFFF; }
@@ -11,9 +13,11 @@ st.markdown("""
     </style>
     """, unsafe_allow_index=True)
 
+# 3. Sidebar Navigation
 st.sidebar.title("🏆 القائمة")
 selection = st.sidebar.radio("اذهب إلى:", ["الرئيسية", "توقعات مجانية"])
 
+# 4. Content Logic
 if selection == "الرئيسية":
     st.title("🏆 برو بيت ماستر")
     st.write("منصة التحليل الرياضي الاحترافية.")
